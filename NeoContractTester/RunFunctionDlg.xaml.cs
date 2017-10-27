@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -61,7 +62,30 @@ namespace NeoContractTester
         {
             var executor = new FunctionExecutor();
             var paramValues = this.ParamValuesTextBox.Text;
-            this.ResultTextBox.Text = executor.ExecuteFunction(this.FilePath, this.FunctionName, this.ParamTypes.Split(','), paramValues.Split(','), this.ReturnType, this.Store);
+            byte[] fileContents = null;
+
+            try
+            {
+                fileContents = File.ReadAllBytes(this.FilePath);
+            }
+            catch(FileNotFoundException fe)
+            {
+                MessageBox.Show("Please Specify a Valid AVM File in the AVM File Path text box.");
+                return;
+            }
+            catch( Exception ex )
+            {
+                MessageBox.Show("Please Specify a Valid AVM File in the AVM File Path text box");
+                return;
+            }
+
+            if (fileContents == null || fileContents.Length == 0)
+            {
+                MessageBox.Show("Invalid AVM file. This file has nothing in it.");
+                return; 
+            }
+
+            this.ResultTextBox.Text = executor.ExecuteFunction(fileContents, this.FunctionName, this.ParamTypes.Split(','), paramValues.Replace(" ", string.Empty).Split(','), this.ReturnType, this.Store);
         }
     }
 }

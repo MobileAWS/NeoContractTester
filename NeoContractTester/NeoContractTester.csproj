@@ -268,31 +268,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddActionDialog.xaml.cs">
-      <DependentUpon>AddActionDialog.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="AddActionDlg.xaml.cs" />
+    <Compile Include="AddStorageContentDlg.xaml.cs" />
     <Compile Include="Execution\CustomTransacion.cs" />
     <Compile Include="Execution\FunctionExecutor.cs" />
-    <Compile Include="RunFunctionDialog.xaml.cs">
-      <DependentUpon>RunFunctionDialog.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="RunFunctionDlg.xaml.cs" />
     <Compile Include="Support\ActionEntryDataGridItem.cs" />
     <Compile Include="Support\StoreEntryDataGridItem.cs" />
-    <Page Include="AddActionDialog.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="AddActionDlg.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="AddStorageContent.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="AddStorageContentDlg.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AddStorageContent.xaml.cs">
-      <DependentUpon>AddStorageContent.xaml</DependentUpon>
-    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -301,9 +295,9 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="RunFunctionDialog.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="RunFunctionDlg.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

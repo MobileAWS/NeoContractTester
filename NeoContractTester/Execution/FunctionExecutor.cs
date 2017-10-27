@@ -149,8 +149,10 @@ namespace NeoContractTester.Execution
 
     class FunctionExecutor
     {
-        public String ExecuteFunction(string file, string function, string[] parameterTypes, string[]parameterValues, string returnType, Hashtable store)
+        public String ExecuteFunction(byte[] fileContents, string function, string[] parameterTypes, string[]parameterValues, string returnType, Hashtable store)
         {
+            if( fileContents == null || fileContents.Length == 0)
+                return "ERROR";
 
             var generator = new RNGCryptoServiceProvider();
 
@@ -181,7 +183,7 @@ namespace NeoContractTester.Execution
             service.transactions.Add(currentTransaction.Hash.ToArray(), currentTransaction);
 
             var engine = new ExecutionEngine(currentTransaction, Crypto.Default, null, service);
-            engine.LoadScript(File.ReadAllBytes(file));
+            engine.LoadScript( fileContents );
             IList<ContractParameter> parameters = new List<ContractParameter>();
 
             for (int i = 0; i < parameterTypes.Length; i++) {

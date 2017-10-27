@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Development\AllCode\Apheleon\NeoContractTester\NeoContractTester\obj\Debug\
+C:\src\mobileaws\NeoContractTester\NeoContractTester\obj\Debug\
 NeoContractTester
 none
 false
 DEBUG;TRACE
-D:\Development\AllCode\Apheleon\NeoContractTester\NeoContractTester\App.xaml
-41130994551
-2587325684
-16-94421010
-139-1252654747
-AddActionDialog.xaml;AddStorageContent.xaml;MainWindow.xaml;RunFunctionDialog.xaml;
+C:\src\mobileaws\NeoContractTester\NeoContractTester\App.xaml
+4190092116
+
+16669414100
+1392074494358
+AddActionDlg.xaml;AddStorageContentDlg.xaml;MainWindow.xaml;RunFunctionDlg.xaml;
 
 False
 

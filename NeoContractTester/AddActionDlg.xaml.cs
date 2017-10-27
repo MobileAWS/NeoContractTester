@@ -36,9 +36,9 @@ namespace NeoContractTester
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             this._Data = new Hashtable();
-            this._Data.Add("Name", this.FunctionNameTextBox.Text);
-            this._Data.Add("ParamTypes", this.ParameterTypesTextBox.Text);
-            this._Data.Add("ReturnType", this.ReturnTypeTextBox.Text);
+            this._Data.Add("Name", this.FunctionNameTextBox.Text.Replace(" ", string.Empty));
+            this._Data.Add("ParamTypes", this.ParameterTypesTextBox.Text.Replace(" ", string.Empty).ToLower());
+            this._Data.Add("ReturnType", this.ReturnTypeTextBox.Text.Replace(" ", string.Empty).ToLower());
             this.DialogResult = true;
         }
 

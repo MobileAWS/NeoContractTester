@@ -13,7 +13,7 @@
         <TextBox x:Name="KeyTextBox" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316"/>
         <Label Content="Value" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="ValueTextBox" HorizontalAlignment="Left" Height="23" Margin="10,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313"/>
-        <Label Content="Type" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="Type (Only string and integer are supported.)" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="TypeTextBox" HorizontalAlignment="Left" Height="23" Margin="10,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313"/>
 
     </Grid>

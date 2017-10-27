@@ -9,9 +9,9 @@
     <Grid>
         <Label Content="Function Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="FunctionNameTextBox" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390"/>
-        <Label Content="Parameter Types (Comma Separated)" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top"/>
+        <Label Content="Parameter Types (Comma Separated, only string and integer supported)" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="ParameterTypesTextBox" HorizontalAlignment="Left" Height="23" Margin="10,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390"/>
-        <Label Content="Return Type" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.112,0.177"/>
+        <Label Content="Return Type (Only string and integer are supported)" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.112,0.177"/>
         <TextBox x:Name="ReturnTypeTextBox" HorizontalAlignment="Left" Height="23" Margin="10,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390"/>
         <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="235,265,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.563,0.515" Click="SaveButton_Click"/>
         <Button x:Name="Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="325,265,0,0" VerticalAlignment="Top" Width="75"/>

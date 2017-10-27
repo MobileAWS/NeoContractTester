@@ -22,9 +22,9 @@ namespace NeoContractTester
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             this._Data = new Hashtable();
-            this._Data.Add("Key", this.KeyTextBox.Text);
-            this._Data.Add("Value", this.ValueTextBox.Text);
-            this._Data.Add("Type", this.TypeTextBox.Text);
+            this._Data.Add("Key", this.KeyTextBox.Text.Replace(" ", string.Empty));
+            this._Data.Add("Value", this.ValueTextBox.Text.Replace(" ", string.Empty));
+            this._Data.Add("Type", this.TypeTextBox.Text.Replace(" ", string.Empty).ToLower());
             this.DialogResult = true;
         }
 

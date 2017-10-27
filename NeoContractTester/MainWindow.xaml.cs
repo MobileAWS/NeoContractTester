@@ -71,6 +71,8 @@ namespace NeoContractTester
         {
             var dialog = new RunFunctionDialog();
             var selectItem = (ActionEntryDataGridItem)this.ActionsDataGrid.SelectedItem;
+            if (selectItem == null)
+                return;
             dialog.FunctionName = selectItem.Name;
             dialog.ParamTypes = selectItem.ParameterTypes;
             dialog.ReturnType = selectItem.ReturnType;
